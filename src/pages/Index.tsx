@@ -60,7 +60,7 @@ const FAQ = [
 ];
 
 const Index = () => {
-  const [price, setPrice] = useState([7000]);
+  const [price, setPrice] = useState([15000]);
   const [size, setSize] = useState<string | null>(null);
   const [color, setColor] = useState<string | null>(null);
   const [material, setMaterial] = useState<string | null>(null);
@@ -84,7 +84,7 @@ const Index = () => {
           <h4 className="font-medium text-sm uppercase tracking-widest text-muted-foreground">Цена</h4>
           <span className="font-display text-xl">{price[0].toLocaleString()} ₽</span>
         </div>
-        <Slider value={price} onValueChange={setPrice} min={1000} max={7000} step={100} />
+        <Slider value={price} onValueChange={setPrice} min={1000} max={15000} step={100} />
       </div>
       <FilterGroup title="Размер" items={SIZES} active={size} onPick={(v) => toggle(setSize, size, v)} />
       <FilterGroup title="Цвет" items={COLORS} active={color} onPick={(v) => toggle(setColor, color, v)} />
