@@ -27,13 +27,40 @@ const NAV = [
   { label: 'Контакты', href: '#contacts' },
 ];
 
+const IMG_A = 'https://cdn.poehali.dev/projects/9428f04f-c1d2-4a5e-8566-9d6aaea41b23/files/a15c2be7-fa95-4359-8a74-9d03a2168c90.jpg';
+const IMG_B = 'https://cdn.poehali.dev/projects/9428f04f-c1d2-4a5e-8566-9d6aaea41b23/files/8374b86e-9ec1-475d-89f4-416ea7e45792.jpg';
+
 const PRODUCTS = [
-  { id: 1, name: 'Косметичка Soft', price: 2490, size: 'S', color: 'Беж', material: 'Кожа', img: 'https://cdn.poehali.dev/projects/9428f04f-c1d2-4a5e-8566-9d6aaea41b23/files/a15c2be7-fa95-4359-8a74-9d03a2168c90.jpg' },
-  { id: 2, name: 'Сумка Lumé Tote', price: 6900, size: 'L', color: 'Терракота', material: 'Кожа', img: 'https://cdn.poehali.dev/projects/9428f04f-c1d2-4a5e-8566-9d6aaea41b23/files/8374b86e-9ec1-475d-89f4-416ea7e45792.jpg' },
-  { id: 3, name: 'Несессер Travel', price: 3200, size: 'M', color: 'Песок', material: 'Текстиль', img: 'https://cdn.poehali.dev/projects/9428f04f-c1d2-4a5e-8566-9d6aaea41b23/files/a15c2be7-fa95-4359-8a74-9d03a2168c90.jpg' },
-  { id: 4, name: 'Сумка Mini Crossbody', price: 5400, size: 'S', color: 'Беж', material: 'Замша', img: 'https://cdn.poehali.dev/projects/9428f04f-c1d2-4a5e-8566-9d6aaea41b23/files/8374b86e-9ec1-475d-89f4-416ea7e45792.jpg' },
-  { id: 5, name: 'Косметичка Duo', price: 1890, size: 'M', color: 'Терракота', material: 'Текстиль', img: 'https://cdn.poehali.dev/projects/9428f04f-c1d2-4a5e-8566-9d6aaea41b23/files/a15c2be7-fa95-4359-8a74-9d03a2168c90.jpg' },
-  { id: 6, name: 'Шоппер Daily', price: 4100, size: 'L', color: 'Песок', material: 'Замша', img: 'https://cdn.poehali.dev/projects/9428f04f-c1d2-4a5e-8566-9d6aaea41b23/files/8374b86e-9ec1-475d-89f4-416ea7e45792.jpg' },
+  { id: 1,  name: 'Косметичка Soft',        price: 2490,  size: 'S', color: 'Беж',       material: 'Кожа',    img: IMG_A },
+  { id: 2,  name: 'Сумка Lumé Tote',        price: 6900,  size: 'L', color: 'Терракота', material: 'Кожа',    img: IMG_B },
+  { id: 3,  name: 'Несессер Travel',         price: 3200,  size: 'M', color: 'Песок',     material: 'Текстиль',img: IMG_A },
+  { id: 4,  name: 'Сумка Mini Crossbody',   price: 5400,  size: 'S', color: 'Беж',       material: 'Замша',   img: IMG_B },
+  { id: 5,  name: 'Косметичка Duo',         price: 1890,  size: 'M', color: 'Терракота', material: 'Текстиль',img: IMG_A },
+  { id: 6,  name: 'Шоппер Daily',           price: 4100,  size: 'L', color: 'Песок',     material: 'Замша',   img: IMG_B },
+  { id: 7,  name: 'Косметичка Round',       price: 2100,  size: 'S', color: 'Терракота', material: 'Кожа',    img: IMG_A },
+  { id: 8,  name: 'Сумка Tote Grande',      price: 9800,  size: 'L', color: 'Беж',       material: 'Кожа',    img: IMG_B },
+  { id: 9,  name: 'Клатч Evening',          price: 7400,  size: 'S', color: 'Песок',     material: 'Замша',   img: IMG_B },
+  { id: 10, name: 'Несессер Midi',          price: 2750,  size: 'M', color: 'Беж',       material: 'Текстиль',img: IMG_A },
+  { id: 11, name: 'Поясная сумка Belt',     price: 4600,  size: 'M', color: 'Терракота', material: 'Кожа',    img: IMG_B },
+  { id: 12, name: 'Косметичка Flat',        price: 1650,  size: 'S', color: 'Песок',     material: 'Текстиль',img: IMG_A },
+  { id: 13, name: 'Сумка Bucket',           price: 8200,  size: 'M', color: 'Беж',       material: 'Кожа',    img: IMG_B },
+  { id: 14, name: 'Рюкзак Lumé Pack',       price: 12500, size: 'L', color: 'Терракота', material: 'Замша',   img: IMG_B },
+  { id: 15, name: 'Косметичка Organizer',   price: 3400,  size: 'M', color: 'Беж',       material: 'Кожа',    img: IMG_A },
+  { id: 16, name: 'Клатч Mini',             price: 4800,  size: 'S', color: 'Терракота', material: 'Замша',   img: IMG_B },
+  { id: 17, name: 'Шоппер Linen',           price: 2900,  size: 'L', color: 'Песок',     material: 'Текстиль',img: IMG_A },
+  { id: 18, name: 'Несессер XL',            price: 4350,  size: 'L', color: 'Терракота', material: 'Кожа',    img: IMG_A },
+  { id: 19, name: 'Сумка Saddle',           price: 11200, size: 'M', color: 'Беж',       material: 'Замша',   img: IMG_B },
+  { id: 20, name: 'Косметичка Velvet',      price: 3100,  size: 'S', color: 'Терракота', material: 'Замша',   img: IMG_A },
+  { id: 21, name: 'Сумка Hobo',             price: 7800,  size: 'M', color: 'Песок',     material: 'Кожа',    img: IMG_B },
+  { id: 22, name: 'Несессер Flat Pouch',    price: 1400,  size: 'S', color: 'Беж',       material: 'Текстиль',img: IMG_A },
+  { id: 23, name: 'Рюкзак Mini',            price: 8900,  size: 'S', color: 'Беж',       material: 'Кожа',    img: IMG_B },
+  { id: 24, name: 'Сумка Envelope',         price: 6100,  size: 'M', color: 'Терракота', material: 'Кожа',    img: IMG_B },
+  { id: 25, name: 'Косметичка Pro Kit',     price: 5200,  size: 'L', color: 'Песок',     material: 'Замша',   img: IMG_A },
+  { id: 26, name: 'Поясная сумка Slim',     price: 3700,  size: 'S', color: 'Беж',       material: 'Кожа',    img: IMG_B },
+  { id: 27, name: 'Шоппер Canvas',          price: 2200,  size: 'L', color: 'Беж',       material: 'Текстиль',img: IMG_A },
+  { id: 28, name: 'Сумка Structured',       price: 14500, size: 'M', color: 'Терракота', material: 'Кожа',    img: IMG_B },
+  { id: 29, name: 'Косметичка Compact',     price: 1750,  size: 'S', color: 'Песок',     material: 'Текстиль',img: IMG_A },
+  { id: 30, name: 'Клатч Suede Long',       price: 5900,  size: 'M', color: 'Песок',     material: 'Замша',   img: IMG_B },
 ];
 
 const SIZES = ['S', 'M', 'L'];
