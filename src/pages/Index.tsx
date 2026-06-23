@@ -84,7 +84,7 @@ const Index = () => {
           <h4 className="font-medium text-sm uppercase tracking-widest text-muted-foreground">Цена</h4>
           <span className="font-display text-xl">{price[0].toLocaleString()} ₽</span>
         </div>
-        <Slider value={price} onValueChange={setPrice} min={1000} max={15000} step={100} />
+        <Slider value={price} onValueChange={setPrice} min={1000} max={15000} step={50} className="cursor-pointer" />
       </div>
       <FilterGroup title="Размер" items={SIZES} active={size} onPick={(v) => toggle(setSize, size, v)} />
       <FilterGroup title="Цвет" items={COLORS} active={color} onPick={(v) => toggle(setColor, color, v)} />
